@@ -16,6 +16,7 @@ describe( 'Air quality retrieval', f => {
 		.then( res => { 
 			expect( res ).to.be.an( 'object' )
 			expect( res.city ).to.be.a( 'string' )
+			expect( res.current.pollution ).to.be.an( 'object' )
 		 } )
 	 } )
 } )
